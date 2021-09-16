@@ -20,13 +20,12 @@ class _DentistDateScreenState extends State<DentistDateScreen> {
   Widget build(BuildContext context) {
     return PreventiveExaminationDatePickerScreen(
       image: SvgPicture.asset('assets/icons/dentist.svg', width: 50),
-      title: context.l10n.detist,
+      title: context.l10n.dentist,
       onDateChanged: (value) => selectedDate = value,
       onContinueButtonPress: () async {
         if (selectedDate == null) return;
         await registry.get<DatabaseService>().users.updateDentistVisitDate(
             DateWithoutDay(month: monthFromInt(selectedDate!.month), year: selectedDate!.year));
-
         Navigator.pushNamed(context, '/create-account');
       },
       onSkipButtonPress: () => Navigator.pushNamed(context, '/create-account'),

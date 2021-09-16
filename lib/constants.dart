@@ -11,7 +11,7 @@ class LoonoColors {
   static const green = Color.fromARGB(255, 167, 206, 130);
   static const gray = Color.fromARGB(255, 186, 186, 186);
   static const lightGray = Color.fromARGB(255, 248, 244, 242);
-  static const secondaryFont = Color.fromARGB(255, 98, 181, 182);
+  static const secondaryFont = Color.fromRGBO(59, 126, 129, 1);
   static const storyIndicatorActiveDark = Color.fromARGB(255, 26, 25, 25);
   static const storyIndicatorUnderlyingDark = Color.fromRGBO(26, 25, 25, 0.5);
   static const storyIndicatorActiveLight = Color.fromARGB(255, 255, 255, 255);
@@ -66,4 +66,11 @@ class LoonoFonts {
     color: LoonoColors.black,
     fontWeight: FontWeight.normal,
   );
+}
+
+class LoonoSizes {
+  static double buttonBottomPadding(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    return screenHeight > 750 ? screenHeight * 0.15 : screenHeight * 0.075;
+  }
 }

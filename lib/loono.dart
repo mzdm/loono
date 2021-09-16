@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:loono/ui/screens/gynecology_achievement.dart';
-import 'package:loono/ui/screens/general_practicioner_achievement.dart';
 import 'package:loono/ui/screens/create_account.dart';
+import 'package:loono/ui/screens/dentist_achievement.dart';
+import 'package:loono/ui/screens/general_practicioner_achievement.dart';
+import 'package:loono/ui/screens/gynecology_achievement.dart';
 import 'package:loono/ui/screens/onboarding/allow_notifications.dart';
 import 'package:loono/ui/screens/onboarding/birthdate.dart';
 import 'package:loono/ui/screens/onboarding/carousel/carousel.dart';
@@ -15,7 +16,6 @@ import 'package:loono/ui/screens/onboarding/fallback_account/email.dart';
 import 'package:loono/ui/screens/onboarding/fallback_account/nickname.dart';
 import 'package:loono/ui/screens/onboarding/gender.dart';
 import 'package:loono/ui/screens/welcome.dart';
-import 'package:loono/ui/screens/dentist_achievement.dart';
 
 class Loono extends StatelessWidget {
   @override
